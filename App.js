@@ -58,15 +58,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 
-  input: {
-    backgroundColor: "#fff",
-    width: "50%",
-    borderRadius: 8,
-    borderWidth: 1,
-    paddingHorizontal: 8,
-    paddingVertical: 8,
-  },
-
   button: {
     backgroundColor: "#140D0D",
     borderColor: "#fff",

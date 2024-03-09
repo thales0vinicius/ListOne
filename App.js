@@ -80,8 +80,8 @@ const styles = StyleSheet.create({
   },
 
   img2: {
-    width: 230,
-    height: 230,
+    width: 200,
+    height: 200,
   },
 
   img3: {

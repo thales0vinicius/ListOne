@@ -20,36 +20,42 @@ export default function App() {
 
       <Image source={require("./assets/Desenho.png")} style={styles.img2} />
 
-      <Text style={styles.texto2}>Organize seu trabalho e sua</Text>
+      <Text style={styles.texto2}>Organize seu trabalho</Text>
 
-      <Text style={styles.texto3}>vida de uma forma simples.</Text>
+      <Text style={styles.texto3}>e vida de uma forma</Text>
+
+      <Text style={styles.texto4}>simples.</Text>
 
       <TouchableOpacity style={styles.button}>
         <Image source={require("./assets/Google.png")} style={styles.img3} />
 
-        <Text style={styles.texto4}>Entrar com Google</Text>
+        <Text style={styles.texto5}>Entrar com Google</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.button}>
         <Image source={require("./assets/Email.png")} style={styles.img4} />
 
-        <Text style={styles.texto5}>Entrar com E-mail</Text>
+        <Text style={styles.texto6}>Entrar com E-mail</Text>
       </TouchableOpacity>
 
       <TouchableOpacity>
-        <Text style={styles.texto6}>Não tenho uma conta...</Text>
+        <Text style={styles.texto7}>Não tenho uma conta...</Text>
       </TouchableOpacity>
 
-      <Text style={styles.texto7}>
-        Ao continuar com os serviços acima, você concorda com os "Termos de
-        Serviço" e com a "Política de Privacidade"
+      <Text style={styles.texto8}>
+        Ao continuar com os serviços acima, você concorda com os:
+        <TouchableOpacity>
+          <Text style={styles.underline}>"Termos de Serviço"</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text style={styles.underline}>"Política de Privacidade"</Text>
+        </TouchableOpacity>
       </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-
   container: {
     backgroundColor: "#140D0D",
     flex: 1,
@@ -93,8 +99,8 @@ const styles = StyleSheet.create({
   img4: {
     width: 27,
     height: 25,
-    marginRight: 4,
     marginLeft: -3,
+    marginRight: 4,
   },
 
   texto1: {
@@ -103,8 +109,8 @@ const styles = StyleSheet.create({
   },
 
   texto2: {
-    textAlign: "center",
     color: "#fff",
+    textAlign: "center",
     fontSize: 20,
     marginTop: 3,
   },
@@ -120,11 +126,19 @@ const styles = StyleSheet.create({
   texto4: {
     color: "#fff",
     textAlign: "center",
+    fontSize: 18,
+    marginTop: -25,
+    marginBottom: 15,
+  },
+
+  texto5: {
+    color: "#fff",
+    textAlign: "center",
     fontSize: 14,
     marginLeft: 10,
   },
 
-  texto5: {
+  texto6: {
     color: "#fff",
     textAlign: "center",
     fontSize: 14,
@@ -132,19 +146,24 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
 
-  texto6: {
+  texto7: {
     color: "#fff",
     textAlign: "center",
     textDecorationLine: "underline",
-    fontSize: 12,
-    gap: 12,
+    fontSize: 14,
     marginTop: 2,
   },
 
-  texto7: {
+  texto8: {
     color: "#fff",
     textAlign: "center",
     fontSize: 10,
     marginTop: 30,
+  },
+
+  underline: {
+    color: "#fff",
+    textDecorationLine: "underline",
+    fontSize: 12,
   },
 });

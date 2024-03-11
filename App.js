@@ -5,7 +5,10 @@ import {
   Image,
   TouchableOpacity,
   StatusBar,
+  Animated,
 } from "react-native";
+
+
 
 export default function App() {
   return (

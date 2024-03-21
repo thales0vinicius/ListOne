@@ -5,14 +5,13 @@ import {
   Image,
   TouchableOpacity,
   StatusBar,
-  Animated,
 } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar></StatusBar>
-
+      
       <View style={styles.logo}>
         <Image source={require("./assets/Relógio.png")} style={styles.img1} />
 
@@ -44,13 +43,7 @@ export default function App() {
       </TouchableOpacity>
 
       <Text style={styles.texto8}>
-        Ao continuar com os serviços acima, você concorda com os:
-        <TouchableOpacity>
-          <Text style={styles.underline}>"Termos de Serviço"</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.underline}>"Política de Privacidade"</Text>
-        </TouchableOpacity>
+        Ao continuar com os serviços acima, você concorda com os: "Termos de Serviço" e com a "Política de Privacidade"
       </Text>
     </View>
   );
@@ -94,14 +87,11 @@ const styles = StyleSheet.create({
   img3: {
     width: 20,
     height: 20,
-    marginLeft: -1,
   },
 
   img4: {
     width: 27,
     height: 25,
-    marginLeft: -3,
-    marginRight: 4,
   },
 
   texto1: {
@@ -136,15 +126,13 @@ const styles = StyleSheet.create({
     color: "#fff",
     textAlign: "center",
     fontSize: 14,
-    marginLeft: 10,
+
   },
 
   texto6: {
     color: "#fff",
     textAlign: "center",
     fontSize: 14,
-    marginLeft: 4,
-    marginRight: 5,
   },
 
   texto7: {
@@ -160,11 +148,5 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 10,
     marginTop: 30,
-  },
-
-  underline: {
-    color: "#fff",
-    textDecorationLine: "underline",
-    fontSize: 12,
   },
 });

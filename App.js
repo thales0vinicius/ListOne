@@ -39,10 +39,10 @@ export default function App() {
       </TouchableOpacity>
 
       <TouchableOpacity>
-        <Text style={styles.texto7}>Não tenho uma conta...</Text>
+        <Text style={styles.texto6}>Não tenho uma conta...</Text>
       </TouchableOpacity>
 
-      <Text style={styles.texto8}>
+      <Text style={styles.texto7}>
         Ao continuar com os serviços acima, você concorda com os: "Termos de Serviço" e com a "Política de Privacidade"
       </Text>
     </View>
@@ -121,14 +121,14 @@ const styles = StyleSheet.create({
     marginRight: 15,
   },
 
-  texto7: {
+  texto6: {
     color: "#fff",
     textDecorationLine: "underline",
     fontSize: 14,
     marginTop: 6,
   },
 
-  texto8: {
+  texto7: {
     color: "#fff",
     textAlign: "center",
     fontSize: 10,

@@ -13,12 +13,12 @@ export default function App() {
       <StatusBar></StatusBar>
       
       <View style={styles.logo}>
-        <Image source={require("./assets/Relógio.png")} style={styles.img1} />
+        <Image source={require("./assets/relógio.png")} style={styles.img1} />
 
         <Text style={styles.texto1}>ListOne</Text>
       </View>
 
-      <Image source={require("./assets/Desenho.png")} style={styles.img2} />
+      <Image source={require("./assets/desenho.png")} style={styles.img2} />
 
       <Text style={styles.texto2}>Organize seu trabalho</Text>
 
@@ -27,15 +27,15 @@ export default function App() {
       <Text style={styles.texto4}>simples.</Text>
 
       <TouchableOpacity style={styles.button}>
-        <Image source={require("./assets/Google.png")} style={styles.img3} />
+      <Image source={require("./assets/google.png")} style={styles.img3}/>
 
-        <Text style={styles.texto5}>Entrar com Google</Text>
+      <Text style={styles.texto5}>Entrar com Google</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.button}>
-        <Image source={require("./assets/Email.png")} style={styles.img4} />
+      <Image source={require("./assets/email.png")} style={styles.img3}/>
 
-        <Text style={styles.texto6}>Entrar com E-mail</Text>
+      <Text style={styles.texto5}>Entrar com E-mail</Text>
       </TouchableOpacity>
 
       <TouchableOpacity>
@@ -56,16 +56,16 @@ const styles = StyleSheet.create({
     gap: 10,
     alignItems: "center",
     justifyContent: "center",
+    
   },
 
   button: {
     backgroundColor: "#140D0D",
     borderColor: "#fff",
-    flexDirection: "row",
-    borderRadius: 8,
+    borderRadius: 80,
     borderWidth: 1,
-    paddingHorizontal: 24,
     paddingVertical: 8,
+    flexDirection: "row",
   },
 
   logo: {
@@ -87,11 +87,8 @@ const styles = StyleSheet.create({
   img3: {
     width: 20,
     height: 20,
-  },
-
-  img4: {
-    width: 27,
-    height: 25,
+    marginRight: 10,
+    marginLeft: 15,
   },
 
   texto1: {
@@ -101,46 +98,34 @@ const styles = StyleSheet.create({
 
   texto2: {
     color: "#fff",
-    textAlign: "center",
     fontSize: 20,
     marginTop: 3,
   },
 
   texto3: {
     color: "#fff",
-    textAlign: "center",
+    fontSize: 18,
+    marginTop: -10, 
+  },
+
+  texto4: {
+    color: "#fff",
     fontSize: 18,
     marginTop: -10,
     marginBottom: 15,
   },
 
-  texto4: {
-    color: "#fff",
-    textAlign: "center",
-    fontSize: 18,
-    marginTop: -25,
-    marginBottom: 15,
-  },
-
   texto5: {
     color: "#fff",
-    textAlign: "center",
     fontSize: 14,
-
-  },
-
-  texto6: {
-    color: "#fff",
-    textAlign: "center",
-    fontSize: 14,
+    marginRight: 15,
   },
 
   texto7: {
     color: "#fff",
-    textAlign: "center",
     textDecorationLine: "underline",
     fontSize: 14,
-    marginTop: 2,
+    marginTop: 6,
   },
 
   texto8: {

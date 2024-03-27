@@ -1,6 +1,13 @@
 import {StyleSheet, View, Text, Image, TouchableOpacity, StatusBar, } from "react-native";
-
+import {useFonts} from 'expo-font';
 export default function App() {
+
+  const [fontsLoaded] = useFonts({
+    'MadimiOne-Regular': require('./assets/fonts/MadimiOne-Regular.ttf'),
+    'BebasNeue-Regular': require('./assets/fonts/BebasNeue-Regular.ttf'),
+  });
+
+  
   return (
     <View style={styles.container}>
       <StatusBar></StatusBar>
@@ -31,6 +38,7 @@ export default function App() {
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#140D0D",
@@ -56,8 +64,8 @@ const styles = StyleSheet.create({
   img1: {
     width: 25,
     height: 25,
-    marginTop: 12,
-    marginRight: 7,
+    marginTop: 8,
+    marginRight: 5,
   },
 
   img2: {
@@ -75,25 +83,29 @@ const styles = StyleSheet.create({
   texto1: {
     color: "#fff",
     fontSize: 30,
+    fontFamily: 'MadimiOne-Regular',
   },
 
   texto2: {
     color: "#fff",
-    fontSize: 20,
+    fontSize: 25,
     marginTop: 3,
+    fontFamily: 'BebasNeue-Regular',
   },
 
   texto3: {
     color: "#fff",
-    fontSize: 18,
+    fontSize: 25,
     marginTop: -10,
+    fontFamily: 'BebasNeue-Regular',
   },
 
   texto4: {
     color: "#fff",
-    fontSize: 18,
+    fontSize: 25,
     marginTop: -10,
     marginBottom: 15,
+    fontFamily: 'BebasNeue-Regular',
   },
 
   texto5: {
